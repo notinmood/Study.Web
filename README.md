@@ -9,5 +9,5 @@
 ## 更新企业级类库的命令
 
 ```shell
-npm update basiclibrary.javascript
+pnpm update basiclibrary.ts
 ```
