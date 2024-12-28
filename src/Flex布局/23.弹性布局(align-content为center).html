@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+        .a {
+            width: 500px;
+            height: 600px;
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .b1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .b2 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        .b3 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        .b4 {
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+        }
+
+        .b5 {
+            width: 100px;
+            height: 100px;
+            background-color: turquoise;
+        }
+
+        .b6 {
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+align-content只适用于多行显示的弹性容器，用于控制行（而不是元素）在交叉轴(y轴)上的排序方式,如果项目只有一行，那么该属性不起作用
+<div class="a">
+    <div class="b1">1</div>
+    <div class="b2">2</div>
+    <div class="b3">3</div>
+    <div class="b4">4</div>
+    <div class="b5">5</div>
+    <div class="b6">6</div>
+</div>
+</body>
+</html>
