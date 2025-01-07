@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<label>
+    <input type="text" />
+</label>
+<script type="application/javascript">
+    function isOnTyping(e) {
+        const target = e.target;
+        if (target.readOnly) {
+            return false;
+        }
+        return (target.tagName.toLowerCase() === "input" && ["text", "password"].indexOf(target.type) > -1)
+            || target.tagName.toLowerCase() === "textarea"
+    }
+
+    const onKeyDown = function(e) {
+        if (isOnTyping(e)) {				// 判断是否正在输入
+            alert("✅在输入状态下！");
+        } else {
+            alert("❌在浏览状态下！");
+        }
+    };
+
+    /**
+     * 添加对按键的监控
+     */
+    document.addEventListener("keydown", onKeyDown);
+</script>
+
+</body>
+</html>
