@@ -6,6 +6,7 @@
 
 </head>
 <body>
+<div id="display"></div>
 <label>
     <input type="text" />
 </label>
@@ -20,11 +21,17 @@
     }
 
     const onKeyDown = function(e) {
+        let message = "";
+
         if (isOnTyping(e)) {				// 判断是否正在输入
-            alert("✅在输入状态下！");
+            message = "✅在输入状态下！";
+            // alert(message);
         } else {
-            alert("❌在浏览状态下！");
+            message = "❌在浏览状态下！";
+            // alert(message);
         }
+
+        document.querySelector("#display").innerHTML = message;
     };
 
     /**
